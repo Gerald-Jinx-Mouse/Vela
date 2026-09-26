@@ -38,7 +38,7 @@ Wait until Vite reports that the development server is ready. Then open:
 
 <http://localhost:5190>
 
-Keep the PowerShell window open while using Vela. The development server watches the source files and refreshes the playground as you make changes.
+Keep the PowerShell window open while using Vela. The development server watches the source files and refreshes the playground as you make changes. Closing the browser tab does not stop the server. To exit, follow [Stop Vela](#stop-vela).
 
 ## Later launches
 
@@ -53,7 +53,10 @@ If `package.json` or `package-lock.json` changes after a pull, run `npm install`
 
 ## Stop Vela
 
-Return to the PowerShell window that is running Vite and press `Ctrl+C`. If PowerShell asks whether to terminate the batch job, enter `Y` and press Enter.
+The playground keeps running until you stop that PowerShell process. Return to the window where `npm run playground` is running and use either method:
+
+- Press `q`, then Enter. Vite quits and returns you to the PowerShell prompt. Press `h`, then Enter, in that same window to list Vite's other shortcuts.
+- Press `Ctrl+C`. If PowerShell asks whether to terminate the batch job, enter `Y` and press Enter.
 
 ## Troubleshooting
 
